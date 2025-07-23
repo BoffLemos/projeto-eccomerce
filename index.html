@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce Master</title>
-    <link rel="stylesheet" href="<link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">">
+        rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/cabecalho.css">
+    <link rel="stylesheet" href="css/produtos.css">
 </head>
 
 <body>
@@ -25,57 +26,51 @@
             </button>
 
             <a class="logo" href="/">
-                <image src="./assets/images/images/logo.svg" alt="Dev em Dobro" />
+                <img src="./assets/images/images/logo.svg" alt="Dev em Dobro" />
             </a>
         </div>
         <nav class="menu-principal">
             <ul>
-                <li>
-                    <a href="#home">Home</a>
-                <li> <a href="sobre">Sobre</a>
-                </li>
-                <li> <a href="#Produtos">Produtos</a>
-                </li>
+                <li><a href="#home">Home</a></li>
+                <li> <a href="sobre">Sobre</a></li>
+                <li> <a href="#Produtos">Produtos</a></li>
                 <li> <a href="#Perguntas Frequentes">Perguntas Frequentes</a></li>
-                </li>
                 <li> <a href="#Contato">Fale conosco</a></li>
             </ul>
         </nav>
-        <butto class="botao-carrinho">
+        <button class="botao-carrinho">
             <img src="./assets/images/images/icone_carrinho.svg" alt="">
+       <span>1</span>
         </button>
-        <span>1</span>
+        
         </div>
     </header>
-    </div>
-
-    </header>
     <main>
-        <section>
+        <section class="produtos">
             <h2>Produtos</h2>
             <ul>
-                <li>
+                <li class="produto">
                     <figure>
                         <img src="./assets/images/images/camiseta_roxa.jpg" alt="Camiseta Roxa">
                         <figcaption>Camiseta Dev em Dobro-Roxa</figcaption>
                     </figure>
-                    <div>
+                    <div class="informacoes">
                         <span>Cor: Roxa</span>
                         <span>Tamanho: M</span>
-                        <span>R$ 89,00</span>
-                        <Button>Adicionar ao carrinho</Button>
+                        <span class="preco">R$ 89,00</span>
+                        <Button class="adicionar-ao-carrinho">Adicionar ao carrinho</Button>
                     </div>
                 </li>
-                <li>
+                <li class="produto">
                     <figure>
                         <img src="./assets/images/images/camiseta_roxa.jpg" alt="Camiseta Roxa">
                         <figcaption>Camiseta Dev em Dobro-Roxa</figcaption>
                     </figure>
-                    <div>
+                    <div class="informacoes">
                         <span>Cor: Roxa</span>
                         <span>Tamanho: P</span>
-                        <span>R$ 100,00</span>
-                        <Button>Adicionar ao carrinho</Button>
+                        <span class="preco">R$ 100,00</span>
+                        <Button class="adicionar-ao-carrinho">Adicionar ao carrinho</Button>
                     </div>
                 </li>
             </ul>
@@ -137,26 +132,18 @@
                 </header>
 
                 <div id="modal-1-content">
-                    <Table>
-                        <Thead>
+                    <table>
+                        <thead>
+                            <tr>
                             <th>Produto</th>
                             <th>Descrição</th>
                             <th>Preço</th>
                             <Th>Quantidade</Th>
                             <Th>Total</Th>
                             <th></th>
-                        </Thead>
-                        <Tbody>
-                            <tr>
-                                <td><img src="./assets/images/images/camiseta_roxa.jpg"
-                                        alt="Camiseta roxa dev em dobro"></td>
-                                <td>Camiseta Roxa Dev em Dobro</td>
-                                <td>R$89,90</td>
-                                <td><input type="number" value="1" min="1"></td>
-                                <td>R$89,90</td>
-                                <td><button id="Deletar">Deletar</button></td>
-
                             </tr>
+                        </thead>
+                        <tbody>
                             <tr>
                                 <td><img src="./assets/images/images/camiseta_roxa.jpg"
                                         alt="Camiseta roxa dev em dobro"></td>
@@ -166,10 +153,21 @@
                                 <td>R$89,90</td>
                                 <td><button id="Deletar">Deletar</button></td>
                             </tr>
-                        </Tbody>
-                    </Table>
+                            <tr>
+                        
+                                <td><img src="./assets/images/images/camiseta_roxa.jpg"
+                                        alt="Camiseta roxa dev em dobro"></td>
+                                <td>Camiseta Roxa Dev em Dobro</td>
+                                <td>R$89,90</td>
+                                <td><input type="number" value="1" min="1"></td>
+                                <td>R$89,90</td>
+                                <td><button id="Deletar">Deletar</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
                     <div>
-                        <span id="total carrinho"> Total: R$0,00</span>
+                        <span id="total-carrinho"> Total: R$0,00</span>
                         <button>finalizar compra</button>
                     </div>
 
